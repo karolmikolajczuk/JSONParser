@@ -1,10 +1,10 @@
 #include <string>
 #include <map>
-
+#include <list>
 
 class JSONElement {
     public:
-        JSONElement(std::string& elementname) : elementName{elementname}, anotherElement(nullptr){
+        JSONElement(std::string& elementname) : elementName{elementname} {
 
         }
 
@@ -13,6 +13,6 @@ class JSONElement {
     private:
         std::string elementName;
         std::map<std::string, std::string> attributes;
-        JSONElement* anotherElement;
+        std::list<JSONElement*> anotherElement;
 
 };
