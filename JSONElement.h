@@ -4,10 +4,9 @@
 
 class JSONElement {
     public:
-        JSONElement(std::string& elementname) : elementName{elementname} {
+        JSONElement(std::string& elementname);
 
-        }
-
+        std::string getElementsName() const;
     protected:
 
     private:
