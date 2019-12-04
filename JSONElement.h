@@ -1,4 +1,6 @@
 #include <string>
+#include <map>
+
 
 class JSONElement {
     public:
@@ -6,10 +8,10 @@ class JSONElement {
 
         }
 
-
     protected:
 
     private:
         std::string elementName;
+        std::map<std::string, std::string> attributes;
 
 };
