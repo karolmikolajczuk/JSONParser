@@ -7,11 +7,12 @@ namespace jp {
         public:
             JSONParser(std::string& file);
 
+
         protected:
 
         private:
             std::string fileName;
-            std::ofstream file;
+            std::ofstream* file;
 
     };
 }
