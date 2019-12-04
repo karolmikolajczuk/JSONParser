@@ -4,7 +4,7 @@
 
 class JSONElement {
     public:
-        JSONElement(std::string& elementname) : elementName{elementname} {
+        JSONElement(std::string& elementname) : elementName{elementname}, anotherElement(nullptr){
 
         }
 
@@ -13,5 +13,6 @@ class JSONElement {
     private:
         std::string elementName;
         std::map<std::string, std::string> attributes;
+        JSONElement* anotherElement;
 
 };
