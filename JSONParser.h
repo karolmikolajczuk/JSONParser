@@ -13,11 +13,13 @@ namespace jp {
 
     class JSONParser {
         public:
+            
             JSONParser(std::string& file);
 
             JSONElement* parseFile();
 
         protected:
+
             JSONError openFile();
 
             JSONError checkSyntax();
@@ -25,6 +27,7 @@ namespace jp {
             JSONError parseData();
 
         private:
+
             std::string fileName;
             std::ofstream* file;
 
